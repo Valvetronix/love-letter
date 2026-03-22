@@ -33,18 +33,20 @@ function LetterSection({ content, onPrimaryAction }) {
           shadow="0 0 10px #ff00ff, 0 0 20px #00ffff"
         />
 
-        <motion.h2
-          className="mb-6 text-center text-4xl font-bold md:text-6xl"
-          style={{
-            fontFamily: 'Comic Sans MS, cursive',
-            color: '#fff',
-            textShadow:
-              '3px 3px 0 #ff00ff, -3px -3px 0 #00ffff, 0 0 20px #ffff00, 0 0 30px #ff00ff',
-            filter: 'drop-shadow(0 0 10px #00ffff)',
-          }}
-        >
-          {content.title}
-        </motion.h2>
+        {content.title ? (
+          <motion.h2
+            className="mb-6 text-center text-4xl font-bold md:text-6xl"
+            style={{
+              fontFamily: 'Comic Sans MS, cursive',
+              color: '#fff',
+              textShadow:
+                '3px 3px 0 #ff00ff, -3px -3px 0 #00ffff, 0 0 20px #ffff00, 0 0 30px #ff00ff',
+              filter: 'drop-shadow(0 0 10px #00ffff)',
+            }}
+          >
+            {content.title}
+          </motion.h2>
+        ) : null}
 
         <div
           className="mb-6 bg-white/90 p-8 md:p-12"

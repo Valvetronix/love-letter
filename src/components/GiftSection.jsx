@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { getAssetPath } from '../lib/assets'
 
 function GiftSection({ content, onPrimaryAction }) {
   const stars = Array.from({ length: 30 }, (_, index) => ({
@@ -97,18 +98,11 @@ function GiftSection({ content, onPrimaryAction }) {
                 border: '4px dotted #ff00ff',
               }}
             >
-              <p
-                className="text-xl"
-                style={{ fontFamily: 'Comic Sans MS, cursive' }}
-              >
-                {content.notes[0]}
-              </p>
-              <p
-                className="mt-4"
-                style={{ fontFamily: 'Comic Sans MS, cursive' }}
-              >
-                {content.notes[1]}
-              </p>
+              <img
+                src={getAssetPath(content.festivalImage)}
+                alt="Festival"
+                className="w-full rounded-sm border-2 border-pink-500 object-cover"
+              />
             </div>
 
             <p
@@ -119,7 +113,7 @@ function GiftSection({ content, onPrimaryAction }) {
                 fontStyle: 'italic',
               }}
             >
-              {content.notes[2]}
+              {content.notes[0]}
             </p>
           </div>
         </div>
