@@ -52,10 +52,10 @@ export const siteContent = {
       title: '',
       intro: 'Flor <3,',
       paragraphs: [
-        'Quiero que sepas que sos lo mas hermoso que tengo en la vida.',
-        'Desde que llegaste a mi vida, todo cambió para bien. El café es más rico, la música suena mejor y absolutamente todo es mas divertido con vos.',
+        'Quiero que sepas que sos lo más hermoso que tengo en la vida.',
+        'Desde que llegaste a mi vida, todo cambió para bien. El café es más rico, la música suena mejor... realmente todo es más divertido con vos.',
         'No puedo dejar de pensar en vos ni de verte cuando estamos juntos. Sos literalmente mi sol y yo tu girasol.',
-        'Estos dos años son apenas un pequeno tramo del camino que tenemos juntos...',
+        'Estos dos años son apenas un pequeño tramo del camino que tenemos juntos por delante...',
         'por mas viajes, cafecitos, recitales y experiencias juntos <3...',
       ],
       signature: 'Te amo con todo mi ser,<br /><br />Juani <3',
