@@ -2,6 +2,13 @@ export const siteContent = {
   meta: {
     title: 'Carta de aniversario',
   },
+  audio: {
+    enabled: true,
+    title: 'The Louvre - Lorde',
+    source: 'audio/the-louvre.mp3',
+    helper:
+      'Para activarla, coloca un archivo de audio permitido en public/audio/the-louvre.mp3 y cambia enabled a true.',
+  },
   transitions: {
     intro: {
       target: 'letter',

@@ -4,6 +4,7 @@ import GallerySection from './components/GallerySection'
 import IntroSection from './components/IntroSection'
 import LetterSection from './components/LetterSection'
 import LoaderScreen from './components/LoaderScreen'
+import BackgroundAudio from './components/music/BackgroundAudio'
 import { siteContent } from './config/siteContent'
 import { useAnniversaryFlow } from './hooks/useAnniversaryFlow'
 
@@ -56,4 +57,13 @@ function App() {
   return <GallerySection content={siteContent.screens.gallery} />
 }
 
-export default App
+function AppWithAudio() {
+  return (
+    <>
+      <App />
+      <BackgroundAudio config={siteContent.audio} />
+    </>
+  )
+}
+
+export default AppWithAudio
