@@ -93,7 +93,7 @@ export const siteContent = {
       ],
       bottomAscii: [
         '<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3',
-        '*  Espero que hayas disfrutado este pequeno detalle  *',
+        '*  Espero que te haya gustado  *',
         '<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3',
       ],
       images: [
