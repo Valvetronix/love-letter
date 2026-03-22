@@ -46,9 +46,10 @@ export const siteContent = {
       intro: 'Flor <3,',
       paragraphs: [
         'Quiero que sepas que sos lo mas hermoso que tengo en la vida.',
-        'Desde que llegaste a mi vida, todo cambio para bien. El cafe es mas rico, la musica suena mejor, todo es mas divertido con vos.',
+        'Desde que llegaste a mi vida, todo cambió para bien. El café es más rico, la música suena mejor y absolutamente todo es mas divertido con vos.',
         'No puedo dejar de pensar en vos ni de verte cuando estamos juntos. Sos literalmente mi sol y yo tu girasol.',
-        'Estos dos anos son apenas un pequeno tramo del camino que tenemos juntos, por mas viajes, cafecitos, recitales y experiencias juntos <3...',
+        'Estos dos años son apenas un pequeno tramo del camino que tenemos juntos...',
+        'por mas viajes, cafecitos, recitales y experiencias juntos <3...',
       ],
       signature: 'Te amo con todo mi ser,<br /><br />Juani <3',
       buttonLabel: '*** ABRIR REGALO ***',
@@ -65,9 +66,9 @@ export const siteContent = {
     },
     gift: {
       title: '*** TU REGALO ***',
-      heading: '>>> Espero que manana estes lista para <<<',
+      heading: '>>> Espero que mañana estes lista para <<<',
       festivalImage: 'images/gift/festival.jpg',
-      notes: ['Ahora una pequena galeria con algunas fotos que resumen estos dos anos juntos.'],
+      notes: ['Ahora una pequeña galería con algunas fotos que resumen estos dos años juntos.'],
       buttonLabel: '.:*~*:. VER GALERIA .:*~*:.',
       topAscii: [
         '=======================================',
@@ -84,7 +85,7 @@ export const siteContent = {
     gallery: {
       background: 'images/backgrounds/lavender-field.png',
       title: '.:*~*:. GALERIA .:*~*:.',
-      description: '<3 * Por mas momentos juntos  * <3',
+      description: '<3 * Por más momentos juntos  * <3',
       topAscii: [
         '==========================================================',
         '  *~*~*  <3  GALERIA DE MOMENTOS  <3  *~*~*',
