@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import GiftSection from './components/GiftSection'
 import GallerySection from './components/GallerySection'
 import IntroSection from './components/IntroSection'
@@ -8,7 +8,7 @@ import BackgroundAudio from './components/music/BackgroundAudio'
 import { siteContent } from './config/siteContent'
 import { useAnniversaryFlow } from './hooks/useAnniversaryFlow'
 
-function App() {
+function App({ onOpenLetter }) {
   const { currentScreen, loadingState, goToNextScreen } = useAnniversaryFlow({
     initialScreen: 'intro',
     transitions: siteContent.transitions,
@@ -31,7 +31,13 @@ function App() {
     return (
       <IntroSection
         content={siteContent.screens.intro}
-        onPrimaryAction={goToNextScreen}
+        onPrimaryAction={async () => {
+          if (onOpenLetter) {
+            await onOpenLetter()
+          }
+
+          goToNextScreen()
+        }}
       />
     )
   }
@@ -58,10 +64,16 @@ function App() {
 }
 
 function AppWithAudio() {
+  const audioRef = useRef(null)
+
   return (
     <>
-      <App />
-      <BackgroundAudio config={siteContent.audio} />
+      <App
+        onOpenLetter={async () => {
+          await audioRef.current?.playAudio?.()
+        }}
+      />
+      <BackgroundAudio config={siteContent.audio} ref={audioRef} />
     </>
   )
 }

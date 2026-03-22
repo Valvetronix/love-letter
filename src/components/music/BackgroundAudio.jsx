@@ -1,7 +1,13 @@
-import { useEffect, useRef, useState } from 'react'
+import {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from 'react'
 import { getAssetPath } from '../../lib/assets'
 
-function BackgroundAudio({ config }) {
+const BackgroundAudio = forwardRef(function BackgroundAudio({ config }, ref) {
   const audioRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -12,6 +18,25 @@ function BackgroundAudio({ config }) {
       }
     }
   }, [])
+
+  const playAudio = async () => {
+    const audio = audioRef.current
+
+    if (!audio) {
+      return
+    }
+
+    try {
+      await audio.play()
+      setIsPlaying(true)
+    } catch {
+      setIsPlaying(false)
+    }
+  }
+
+  useImperativeHandle(ref, () => ({
+    playAudio,
+  }))
 
   if (!config?.enabled || !config?.source) {
     return null
@@ -30,12 +55,7 @@ function BackgroundAudio({ config }) {
       return
     }
 
-    try {
-      await audio.play()
-      setIsPlaying(true)
-    } catch {
-      setIsPlaying(false)
-    }
+    await playAudio()
   }
 
   return (
@@ -50,6 +70,6 @@ function BackgroundAudio({ config }) {
       </button>
     </>
   )
-}
+})
 
 export default BackgroundAudio
