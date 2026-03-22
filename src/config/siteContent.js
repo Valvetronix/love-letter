@@ -21,48 +21,85 @@ export const siteContent = {
   },
   screens: {
     intro: {
-      eyebrow: 'Aniversario',
-      title: 'Una carta para abrir con calma',
-      description:
-        'Base funcional y editable para que despues reemplaces fondos, espaciados, tipografias, colores y textos finales segun tu diseno de Figma.',
-      helper:
-        'Esta portada esta pensada para que mantengas el gesto principal en mobile: un CTA grande, claro y comodo.',
-      buttonLabel: 'Abrir carta',
       background: 'images/backgrounds/lavender-field.png',
+      title: 'Feliz Aniversario <3',
+      buttonLabel: '~*~ ABRIR CARTA ~*~',
+      topAscii: [
+        '        .:*~*:._.:*~*:._.:*~*:.',
+        '    .:*~  * <3 * <3 *  ~*:.',
+        '.:*~*:._.:*~*:._.:*~*:._.:*~*:.',
+      ],
+      middleAscii: [
+        '    <3<3<3  *  <3<3<3  *  <3<3<3',
+        '  *  .:*~*:.  *  .:*~*:.  *',
+        '    <3<3<3  *  <3<3<3  *  <3<3<3',
+      ],
+      bottomAscii: [
+        '.:*~*:._.:*~*:._.:*~*:._.:*~*:.',
+        '    * <3 * <3 * <3 * <3 *',
+        '.:*~*:._.:*~*:._.:*~*:._.:*~*:.',
+      ],
     },
     letter: {
-      eyebrow: 'Carta',
-      title: 'Tu carta principal',
-      intro:
-        'Esta seccion aloja el cuerpo de la carta. Los parrafos estan centralizados aca para que luego puedas cambiar el contenido sin tocar el layout.',
+      background: 'images/backgrounds/lavender-field.png',
+      title: '.:*~*:. Mi Carta Para Ti .:*~*:.',
+      intro: 'Querida persona especial,',
       paragraphs: [
-        'Placeholder para el comienzo de la carta. Aca podras pegar tu version final respetando la jerarquia visual de tu diseno.',
-        'El bloque esta preparado para texto largo en mobile, con scroll natural, ancho comodo de lectura y boton final separado del contenido.',
-        'Tambien podes dividir la carta en varios parrafos, sumar una firma o ajustar el espaciado desde estilos sin cambiar la logica de la app.',
+        'Hoy quiero decirte lo mucho que significas para mi. Cada dia a tu lado es un regalo lleno de momentos hermosos que atesoro en mi corazon.',
+        'Eres esa persona que hace que los dias ordinarios se conviertan en extraordinarios. Gracias por tu bondad, tu carino y por todos los recuerdos compartidos.',
+        'Este espacio queda listo para que reemplaces el texto con tu carta final respetando el layout original de Figma.',
       ],
-      signature: 'Con amor, Tu nombre',
-      buttonLabel: 'Abrir regalo',
-      background: 'images/backgrounds/letter-placeholder.svg',
+      signature: 'Con todo mi carino,<br />Tu nombre <3',
+      buttonLabel: '*** ABRIR REGALO ***',
+      topAscii: [
+        '*~*~*  <3  *~*~*  <3  *~*~*',
+        '  .:*~*:. .:*~*:. .:*~*:.',
+        '*~*~*  <3  *~*~*  <3  *~*~*',
+      ],
+      dividerAscii: '<3<3<3 * <3<3<3 * <3<3<3 * <3<3<3',
+      bottomAscii: [
+        '*~*~*  <3  *~*~*  <3  *~*~*',
+        '  .:*~*:. .:*~*:. .:*~*:.',
+      ],
     },
     gift: {
-      eyebrow: 'Regalo',
-      title: 'Tu seccion de regalo',
+      title: '*** TU REGALO ***',
+      heading: '>>> He preparado algo muy especial para ti <<<',
       description:
-        'Este bloque funciona como segunda parada de la experiencia. Puede alojar un texto corto, una dedicatoria, una sorpresa visual o el contenido que despues definas en Figma.',
+        'Esta seccion conserva el look intenso y retro del diseno original. Queda lista para que reemplaces textos, detalles y contenido final.',
       notes: [
-        'El layout mantiene un ancho controlado para leer bien en celular.',
-        'El CTA final queda al final de la seccion y reutiliza el mismo componente de boton.',
-        'Todo el contenido visible se edita desde este archivo.',
+        '*** Una coleccion de momentos hermosos *** que he guardado con carino.',
+        'Cada imagen puede representar algo especial: flores, paisajes, recuerdos o cualquier sorpresa que quieras mostrar despues.',
+        '~ Las mejores cosas de la vida no son cosas, son momentos compartidos y recuerdos que duran para siempre ~',
       ],
-      buttonLabel: 'Ver galeria',
-      background: 'images/backgrounds/gift-placeholder.svg',
+      buttonLabel: '.:*~*:. VER GALERIA .:*~*:.',
+      topAscii: [
+        '=======================================',
+        '  * <3 * <3 REGALO ESPECIAL <3 * <3 *',
+        '=======================================',
+      ],
+      dividerAscii: '<3 * <3 * <3 * <3 * <3 * <3 * <3 * <3',
+      bottomAscii: [
+        '=======================================',
+        '  *~*~*  <3  *~*~*  <3  *~*~*',
+        '=======================================',
+      ],
     },
     gallery: {
-      eyebrow: 'Galeria',
-      title: 'Recuerdos y fotos',
+      background: 'images/backgrounds/lavender-field.png',
+      title: '.:*~*:. GALERIA .:*~*:.',
       description:
-        'La galeria usa un grid responsive y scroll vertical fluido. Solo tenes que reemplazar las rutas de abajo por tus fotos reales dentro de public/images/gallery.',
-      background: 'images/backgrounds/gallery-placeholder.svg',
+        '<3 * Una coleccion de belleza natural * <3\n*** que quiero compartir contigo ***',
+      topAscii: [
+        '==========================================================',
+        '  *~*~*  <3  GALERIA DE MOMENTOS  <3  *~*~*',
+        '==========================================================',
+      ],
+      bottomAscii: [
+        '<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3',
+        '*  Espero que hayas disfrutado este pequeno detalle  *',
+        '<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3',
+      ],
       images: [
         { src: 'images/gallery/photo-01.svg', alt: 'Placeholder de galeria 01', label: 'Foto 01' },
         { src: 'images/gallery/photo-02.svg', alt: 'Placeholder de galeria 02', label: 'Foto 02' },
